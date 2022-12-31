@@ -51,7 +51,7 @@
           <ul class="list-unstyled nav-menu m-0 pr-lg-3 pr-2">
             <li class="nav-item list-inline-item active"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item list-inline-item"><a class="nav-link" href="{% url 'services' %}">Service</a></li>
-            <li class="nav-item list-inline-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+            {% comment %} <li class="nav-item list-inline-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> {% endcomment %}
             <li class="nav-item list-inline-item"><a class="nav-link" href="{% url 'login' %}">My Account</a></li>
             <li class="nav-item list-inline-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
           </ul>
@@ -59,9 +59,9 @@
         <div class="d-flex ml-lg-0 ml-auto">
           <button class="navbar-toggler toggler-spring toggler_bg-white"><span
               class="navbar-toggler-icon"></span></button>
-          <div class="search_field ml-3">
+          {% comment %} <div class="search_field ml-3">
             <a href="#search"><i class="mdi mdi-magnify search_button"></i></a>
-          </div>
+          </div> {% endcomment %}
         </div>
       </div>
     </div>
