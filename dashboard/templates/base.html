@@ -12,7 +12,7 @@
   <meta name="author" content="pixelstrap">
   <link rel="icon" href="{% static 'dashboard/assets/favicon.ico' %}" type="image/x-icon">
   <link rel="shortcut icon" href="{% static 'dashboard/assets/favicon.ico' %}" type="image/x-icon">
-  <title>viho - Premium Admin Template</title>
+  <title>Vukode</title>
   <!-- Google font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -126,22 +126,22 @@
                     <span>View Current business tradelines</span>
                   </a>
                 </li>
-                <li><a class="nav-link menu-title link-nav mt-2" href="{% url 'dispute' %}">
+                {% comment %} <li><a class="nav-link menu-title link-nav mt-2" href="{% url 'dispute' %}">
                     <span>Dispute Your Business Report</span>
                   </a>
-                </li>
+                </li> {% endcomment %}
                 <li><a class="nav-link menu-title link-nav mt-2" href="{% url 'update-company-information' %}">
                     <span>Update Your Company Information</span>
                   </a>
                 </li>
-                <li><a class="nav-link menu-title link-nav mt-2" href="#">
+                {% comment %} <li><a class="nav-link menu-title link-nav mt-2" href="#">
                     <span>Upgrade Membership</span>
                   </a>
                 </li>
                 <li><a class="nav-link menu-title link-nav mt-2" href="#">
                     <span>Cancel membership</span>
                   </a>
-                </li>
+                </li> {% endcomment %}
                 <li><a class="nav-link menu-title link-nav mt-2" href="#">
                     <span>Profile</span>
                   </a>
@@ -163,14 +163,14 @@
       <!-- footer start-->
       <footer class="footer">
         <div class="container-fluid">
-          <div class="row">
+          {% comment %} <div class="row">
             <div class="col-md-6 footer-copyright">
               <p class="mb-0">Copyright 2021-22 © viho All rights reserved.</p>
             </div>
             <div class="col-md-6">
               <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i></p>
             </div>
-          </div>
+          </div> {% endcomment %}
         </div>
       </footer>
     </div>
